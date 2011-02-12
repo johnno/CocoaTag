@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libfreefare
+Description: MIFARE contactless tag access library
+Version: 0.2.0
+URL: http://code.google.com/p/nfc-tools
+Requires: libnfc
+Libs: -L${libdir} -lfreefare
+Cflags: -I${includedir}

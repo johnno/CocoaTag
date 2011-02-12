@@ -1,0 +1,27 @@
+Changes between 0.2.0 and 0.2.1  [xx XXX xxxx]
+
+  *) The mifare_desfire_error_lookup() and mifare_desfire_get_last_error()
+     functions were removed and replaced by the freefare_strerror(),
+     freefare_strerror_r() and freefare_perror() functions.
+  *) The library reports errors other that the ones returned by the PICC.
+  *) The MDAD_KEYx macro where renamed MDAR_KEYx for consistency.
+  *) The MDCM_MACING macro was renamed MDCM_MACED.
+  *) The MDCM_FULLDES macro was renamed MDCM_ENCIPHERED.
+  *) New function mifare_desfire_last_picc_error().
+  *) New function mifare_desfire_aid_get_aid().
+  *) Blok numbers in ISO14443-4 blocks are incremented according to the
+     specification.
+
+Changes between 0.1.0 and 0.2.0  [07 sep 2010]
+
+  *) New function freefare_free_tag() to free individual tags from a MifareTag
+     list.
+  *) The mifare_application_alloc() size parameter is now expressed in bytes
+     and not in sectors.
+  *) New API function mad_sector_reserved().
+  *) The mifare_classic_format_sector() functions now require a sector number
+     instead of a block number.
+  *) New API functions mifare_classic_block_sector(),
+     mifare_classic_sector_first_block(), mifare_classic_sector_block_count()
+     and mifare_classic_sector_last_block().
+  *) New API functions mifare_application_read(), mifare_application_write().

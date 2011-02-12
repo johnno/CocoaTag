@@ -1,0 +1,388 @@
+mifare_desfire.lo mifare_desfire.o: mifare_desfire.c ../config.h \
+  /usr/include/sys/types.h /usr/include/sys/appleapiopts.h \
+  /usr/include/sys/cdefs.h /usr/include/machine/types.h \
+  /usr/include/i386/types.h /usr/include/i386/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h \
+  /usr/include/assert.h /usr/include/ctype.h /usr/include/runetype.h \
+  /usr/include/_types.h /usr/include/errno.h /usr/include/sys/errno.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h \
+  /usr/include/limits.h /usr/include/machine/limits.h \
+  /usr/include/i386/limits.h /usr/include/i386/_limits.h \
+  /usr/include/sys/syslimits.h /usr/include/locale.h \
+  /usr/include/_locale.h /usr/include/math.h \
+  /usr/include/architecture/i386/math.h /usr/include/setjmp.h \
+  /usr/include/machine/setjmp.h /usr/include/i386/setjmp.h \
+  /usr/include/signal.h /usr/include/sys/signal.h \
+  /usr/include/machine/signal.h /usr/include/i386/signal.h \
+  /usr/include/sys/_structs.h /usr/include/machine/_structs.h \
+  /usr/include/i386/_structs.h /usr/include/mach/i386/_structs.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /usr/include/stdio.h /usr/include/secure/_stdio.h \
+  /usr/include/secure/_common.h /usr/include/stdlib.h \
+  /usr/include/Availability.h /usr/include/AvailabilityInternal.h \
+  /usr/include/sys/wait.h /usr/include/sys/resource.h \
+  /usr/include/string.h /usr/include/secure/_string.h /usr/include/time.h \
+  /usr/include/_structs.h /usr/include/inttypes.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h \
+  /usr/include/TargetConditionals.h /usr/include/AvailabilityMacros.h \
+  /System/Library/Frameworks/CoreServices.framework/Headers/../Frameworks/CarbonCore.framework/Headers/MacTypes.h \
+  /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/ConditionalMacros.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFBinaryHeap.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFBitVector.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFBundle.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFDictionary.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFError.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFCharacterSet.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFLocale.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h \
+  /usr/include/libkern/OSByteOrder.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h \
+  /usr/include/libkern/i386/OSByteOrder.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFCalendar.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFDate.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFTimeZone.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFDateFormatter.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFMessagePort.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h \
+  /usr/include/mach/port.h /usr/include/mach/boolean.h \
+  /usr/include/mach/machine/boolean.h /usr/include/mach/i386/boolean.h \
+  /usr/include/mach/machine/vm_types.h /usr/include/mach/i386/vm_types.h \
+  /usr/include/mach/i386/vm_param.h /usr/include/dispatch/dispatch.h \
+  /usr/include/dispatch/base.h /usr/include/dispatch/object.h \
+  /usr/include/dispatch/time.h /usr/include/dispatch/queue.h \
+  /usr/include/dispatch/source.h /usr/include/mach/message.h \
+  /usr/include/mach/kern_return.h /usr/include/mach/machine/kern_return.h \
+  /usr/include/mach/i386/kern_return.h /usr/include/dispatch/group.h \
+  /usr/include/dispatch/semaphore.h /usr/include/dispatch/once.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFNumber.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFNumberFormatter.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFPropertyList.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFSet.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFStringEncodingExt.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFTree.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLAccess.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFAttributedString.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFNotificationCenter.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLEnumerator.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFFileDescriptor.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFMachPort.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLNode.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h \
+  /System/Library/Frameworks/CoreFoundation.framework/Headers/CFStringTokenizer.h \
+  /usr/include/strings.h /usr/include/openssl/rand.h \
+  /usr/include/openssl/ossl_typ.h /usr/include/openssl/e_os2.h \
+  /usr/include/openssl/opensslconf.h freefare.h \
+  /usr/local/include/nfc/nfc.h /usr/local/include/nfc/nfc-types.h \
+  freefare_internal.h /usr/include/openssl/des.h \
+  /usr/include/openssl/des_old.h /usr/include/openssl/symhacks.h \
+  /usr/include/openssl/ui_compat.h /usr/include/openssl/ui.h \
+  /usr/include/openssl/crypto.h /usr/include/openssl/stack.h \
+  /usr/include/openssl/safestack.h /usr/include/openssl/opensslv.h
+
+../config.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/appleapiopts.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/i386/types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/machine/endian.h:
+
+/usr/include/i386/endian.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h:
+
+/usr/include/assert.h:
+
+/usr/include/ctype.h:
+
+/usr/include/runetype.h:
+
+/usr/include/_types.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/machine/limits.h:
+
+/usr/include/i386/limits.h:
+
+/usr/include/i386/_limits.h:
+
+/usr/include/sys/syslimits.h:
+
+/usr/include/locale.h:
+
+/usr/include/_locale.h:
+
+/usr/include/math.h:
+
+/usr/include/architecture/i386/math.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/machine/setjmp.h:
+
+/usr/include/i386/setjmp.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/machine/signal.h:
+
+/usr/include/i386/signal.h:
+
+/usr/include/sys/_structs.h:
+
+/usr/include/machine/_structs.h:
+
+/usr/include/i386/_structs.h:
+
+/usr/include/mach/i386/_structs.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/usr/include/stdio.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/Availability.h:
+
+/usr/include/AvailabilityInternal.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/sys/resource.h:
+
+/usr/include/string.h:
+
+/usr/include/secure/_string.h:
+
+/usr/include/time.h:
+
+/usr/include/_structs.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h:
+
+/usr/include/TargetConditionals.h:
+
+/usr/include/AvailabilityMacros.h:
+
+/System/Library/Frameworks/CoreServices.framework/Headers/../Frameworks/CarbonCore.framework/Headers/MacTypes.h:
+
+/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/ConditionalMacros.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBinaryHeap.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBitVector.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBundle.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFDictionary.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFError.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFCharacterSet.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFLocale.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFByteOrder.h:
+
+/usr/include/libkern/OSByteOrder.h:
+
+/usr/include/libkern/_OSByteOrder.h:
+
+/usr/include/libkern/i386/_OSByteOrder.h:
+
+/usr/include/libkern/i386/OSByteOrder.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFCalendar.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFDate.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTimeZone.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFDateFormatter.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFMessagePort.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h:
+
+/usr/include/mach/port.h:
+
+/usr/include/mach/boolean.h:
+
+/usr/include/mach/machine/boolean.h:
+
+/usr/include/mach/i386/boolean.h:
+
+/usr/include/mach/machine/vm_types.h:
+
+/usr/include/mach/i386/vm_types.h:
+
+/usr/include/mach/i386/vm_param.h:
+
+/usr/include/dispatch/dispatch.h:
+
+/usr/include/dispatch/base.h:
+
+/usr/include/dispatch/object.h:
+
+/usr/include/dispatch/time.h:
+
+/usr/include/dispatch/queue.h:
+
+/usr/include/dispatch/source.h:
+
+/usr/include/mach/message.h:
+
+/usr/include/mach/kern_return.h:
+
+/usr/include/mach/machine/kern_return.h:
+
+/usr/include/mach/i386/kern_return.h:
+
+/usr/include/dispatch/group.h:
+
+/usr/include/dispatch/semaphore.h:
+
+/usr/include/dispatch/once.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFNumber.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFNumberFormatter.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPropertyList.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSet.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStringEncodingExt.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFTree.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLAccess.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFAttributedString.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFNotificationCenter.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURLEnumerator.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFFileDescriptor.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFMachPort.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLNode.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h:
+
+/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStringTokenizer.h:
+
+/usr/include/strings.h:
+
+/usr/include/openssl/rand.h:
+
+/usr/include/openssl/ossl_typ.h:
+
+/usr/include/openssl/e_os2.h:
+
+/usr/include/openssl/opensslconf.h:
+
+freefare.h:
+
+/usr/local/include/nfc/nfc.h:
+
+/usr/local/include/nfc/nfc-types.h:
+
+freefare_internal.h:
+
+/usr/include/openssl/des.h:
+
+/usr/include/openssl/des_old.h:
+
+/usr/include/openssl/symhacks.h:
+
+/usr/include/openssl/ui_compat.h:
+
+/usr/include/openssl/ui.h:
+
+/usr/include/openssl/crypto.h:
+
+/usr/include/openssl/stack.h:
+
+/usr/include/openssl/safestack.h:
+
+/usr/include/openssl/opensslv.h:

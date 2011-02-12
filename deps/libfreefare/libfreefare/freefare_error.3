@@ -1,0 +1,120 @@
+.\" Copyright (C) 2010 Romain Tartiere
+.\"
+.\" This program is free software: you can redistribute it and/or modify it
+.\" under the terms of the GNU Lesser General Public License as published by the
+.\" Free Software Foundation, either version 3 of the License, or (at your
+.\" option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful, but WITHOUT
+.\" ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+.\" FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
+.\" more details.
+.\"
+.\" You should have received a copy of the GNU Lesser General Public License
+.\" along with this program.  If not, see <http://www.gnu.org/licenses/>
+.\"
+.\" $Id: mifare_desfire.3 495 2010-07-26 21:48:18Z rtartiere@il4p.fr $
+.\"
+.Dd September 28, 2010
+.Dt FREEFARE_ERROR 3
+.Os
+.\"  _   _
+.\" | \ | | __ _ _ __ ___   ___
+.\" |  \| |/ _` | '_ ` _ \ / _ \
+.\" | |\  | (_| | | | | | |  __/
+.\" |_| \_|\__,_|_| |_| |_|\___|
+.\"
+.Sh NAME
+.Nm freefare_strerror ,
+.Nm freefare_strerror_r ,
+.Nm freefare_perror ,
+.Nm mifare_desfire_last_picc_error
+.Nd Error Reporting Functions.
+.\"  _     _ _
+.\" | |   (_) |__  _ __ __ _ _ __ _   _
+.\" | |   | | '_ \| '__/ _` | '__| | | |
+.\" | |___| | |_) | | | (_| | |  | |_| |
+.\" |_____|_|_.__/|_|  \__,_|_|   \__, |
+.\"                               |___/
+.Sh LIBRARY
+Mifare card manipulation library (libfreefare, \-lfreefare)
+.\"  ____                              _
+.\" / ___| _   _ _ __   ___  _ __  ___(_)___
+.\" \___ \| | | | '_ \ / _ \| '_ \/ __| / __|
+.\"  ___) | |_| | | | | (_) | |_) \__ \ \__ \
+.\" |____/ \__, |_| |_|\___/| .__/|___/_|___/
+.\"        |___/            |_|
+.Sh SYNOPSIS
+.In freefare.h
+.Ft "const char *"
+.Fn freefare_strerror "MifareTag tag"
+.Ft "int"
+.Fn freefare_strerror_r "MifareTag tag" "char *buffer" "size_t len"
+.Ft "void"
+.Fn freefare_strerror "MifareTag tag" "char *string"
+.Ft uint8_t
+.Fm mifare_desfire_last_picc_error "MifareTag tag"
+.\"  ____                      _       _   _
+.\" |  _ \  ___  ___  ___ _ __(_)_ __ | |_(_) ___  _ __
+.\" | | | |/ _ \/ __|/ __| '__| | '_ \| __| |/ _ \| '_ \
+.\" | |_| |  __/\__ \ (__| |  | | |_) | |_| | (_) | | | |
+.\" |____/ \___||___/\___|_|  |_| .__/ \__|_|\___/|_| |_|
+.\"                             |_|
+.Sh DESCRIPTION
+The
+.Fn freefare_strerror
+functions returns the error string corresponding to the last PCD or PICC error
+encounred using
+.Vt tag .
+.Pp
+The
+.Fn freefare_strerror_r
+functions does the same as
+.Fn freefare_strerror
+but the error message is copied into
+.Vt buffer
+for a maximum size of
+.Vt len
+chars.
+.Pp
+The
+.Fn freefare_strerror
+function displays the last PCD or PICC error encounred using
+.Vt tag
+to stderr.
+.Pp
+The
+.Fn mifare_desfire_last_picc_error
+function returns the error code returned by the last command run on
+.Vt tag .
+.\"  ____      _                                 _
+.\" |  _ \ ___| |_ _   _ _ __ _ __   __   ____ _| |_   _  ___  ___
+.\" | |_) / _ \ __| | | | '__| '_ \  \ \ / / _` | | | | |/ _ \/ __|
+.\" |  _ <  __/ |_| |_| | |  | | | |  \ V / (_| | | |_| |  __/\__ \
+.\" |_| \_\___|\__|\__,_|_|  |_| |_|   \_/ \__,_|_|\__,_|\___||___/
+.\"
+.Sh RETURN VALUES
+.Fn freefare_strerror
+returns the error message,
+.Fn freefare_strerror_r
+returns 0 on success, -1 on failure, and
+.Fn mifare_desfire_last_picc_error
+returns an error code or 0 if no error is known or
+.Vt tag
+is not a Mifare DESFire target.
+.\"  ____                    _
+.\" / ___|  ___  ___    __ _| |___  ___
+.\" \___ \ / _ \/ _ \  / _` | / __|/ _ \
+.\"  ___) |  __/  __/ | (_| | \__ \ (_) |
+.\" |____/ \___|\___|  \__,_|_|___/\___/
+.\"
+.Sh SEE ALSO
+.Xr freefare 3 ,
+.\"     _         _   _
+.\"    / \  _   _| |_| |__   ___  _ __ ___
+.\"   / _ \| | | | __| '_ \ / _ \| '__/ __|
+.\"  / ___ \ |_| | |_| | | | (_) | |  \__ \
+.\" /_/   \_\__,_|\__|_| |_|\___/|_|  |___/
+.\"
+.Sh AUTHORS
+.An Romain Tartiere Aq romain@il4p.org

@@ -1,0 +1,64 @@
+.TH NFC-MFCLASSIC 1 "Nov 02, 2009"
+.SH NAME
+nfc-mfclassic \- MIFARE Classic command line tool
+.SH SYNOPSIS
+.B nfc-mfclassic
+.RI \fR\fBr\fR|\fBw\fR
+.RI \fR\fBa\fR|\fBb\fR
+.IR DUMP
+.IR [KEYS]
+
+.SH DESCRIPTION
+.B nfc-mfclassic
+is a MIFARE Classic tool that allow to read or write
+.IR DUMP
+file using Mifare keys provided in 
+.IR KEYS
+file.
+
+MIFARE Classic tag is one of the most widely used RFID tags.
+
+The firmware in the NFC controller supports authenticating, reading and writing
+to/from Mifare Classic tags. This tool demonstrates the speed of this library
+and its ease-of-use. It's possible to read and write the complete content of a
+Mifare Classic 4KB tag within 1 second. It uses a binary Mifare Dump file (MFD)
+to store the keys and data for all sectors.
+
+Be cautious that some parts of a Mifare Classic memory are used for r/w access
+of the rest of the memory, so please read the tag documentation before experimenting too much!
+
+.SH OPTIONS
+.BR r " | " w
+Perform read from (
+.B r
+) or write to (
+.B w
+) card.
+.TP
+.BR a " | " b
+Use A or B Mifare keys.
+.TP
+.IR DUMP
+MiFare Dump (MFD) used to write (card to MFD) or (MFD to card)
+.TP
+.IR KEYS
+MiFare Dump (MFD) that contains the keys (optional). Data part of the dump is ignored.
+
+
+.SH BUGS
+Please report any bugs on the
+.B libnfc
+forum at
+.BR http://www.libnfc.org/community/ "."
+.SH LICENCE
+.B libnfc
+and
+.B libnfc-examples
+are covered by the GNU Lesser General Public License (LGPL), version 3.
+.SH AUTHORS
+Roel Verdult <roel@libnfc.org>
+Romuald Conty <romuald@libnfc.org>
+Romain Tartière <romain@blogreen.org>
+.PP
+This manual page was written by Romuald Conty <romuald@libnfc.org>.
+It is licensed under the terms of the GNU GPL (version 2 or later).

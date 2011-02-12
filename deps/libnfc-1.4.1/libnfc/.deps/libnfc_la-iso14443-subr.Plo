@@ -1,0 +1,38 @@
+libnfc_la-iso14443-subr.lo libnfc_la-iso14443-subr.o: iso14443-subr.c \
+  ../config.h /usr/include/stdio.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/_types.h /usr/include/i386/_types.h \
+  /usr/include/secure/_stdio.h /usr/include/secure/_common.h \
+  ../include/nfc/nfc.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h \
+  ../include/nfc/nfc-types.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+
+../config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+../include/nfc/nfc.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h:
+
+../include/nfc/nfc-types.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:

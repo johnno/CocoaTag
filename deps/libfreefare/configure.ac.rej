@@ -1,0 +1,45 @@
+***************
+*** 30,38 ****
+  AC_FUNC_REALLOC
+  AC_CHECK_FUNCS([memset pow strerror])
+  
+  AC_CHECK_HEADERS([endian.h sys/endian.h])
+- if test $ac_cv_header_endian_h = "no" -a $ac_cv_header_sys_endian_h = "no"; then
+-   AC_MSG_ERROR(["Can't locate header endian.h."]);
+  fi
+  
+  AC_CHECK_HEADERS([byteswap.h])
+--- 30,40 ----
+  AC_FUNC_REALLOC
+  AC_CHECK_FUNCS([memset pow strerror])
+  
++ AC_CHECK_HEADERS([CoreFoundation/CoreFoundation.h])
++ 
+  AC_CHECK_HEADERS([endian.h sys/endian.h])
++ if test $ac_cv_header_endian_h = "no" -a $ac_cv_header_sys_endian_h = "no" -a $ac_cv_header_CoreFoundation_CoreFoundation_h = "no"; then
++   AC_MSG_ERROR(["Can't locate header endian.h or CoreFoundation.h."]);
+  fi
+  
+  AC_CHECK_HEADERS([byteswap.h])
+***************
+*** 42,48 ****
+  CFLAGS="$CFLAGS -std=c99"
+  
+  # Crypto functions for MIFARE DesFire support are provided by OpenSSL.
+- AC_CHECK_LIB([ssl], [DES_ecb_encrypt], [], [AC_MSG_ERROR([Cannot find libssl.])])
+  AC_CHECK_HEADER([openssl/des.h], [], [AC_MSG_ERROR([Cannot find libssl headers.])])
+  
+  # Checks for pkg-config modules.
+--- 44,55 ----
+  CFLAGS="$CFLAGS -std=c99"
+  
+  # Crypto functions for MIFARE DesFire support are provided by OpenSSL.
++ AC_CHECK_LIB([crypto], [DES_ecb_encrypt])
++ AC_CHECK_LIB([ssl], [DES_ecb_encrypto])
++ if test $ac_cv_lib_crypto_DES_ecb_encrypt = "no" -a $ac_cv_lib_crypto_DES_ecb_encrypt = "no"; then
++ 	AC_MSG_ERROR([Cannot find libssl]);
++ fi
++ #AC_CHECK_LIB([ssl], [DES_ecb_encrypt], [], [AC_MSG_ERROR([Cannot find libssl.])],[crypto])
+  AC_CHECK_HEADER([openssl/des.h], [], [AC_MSG_ERROR([Cannot find libssl headers.])])
+  
+  # Checks for pkg-config modules.

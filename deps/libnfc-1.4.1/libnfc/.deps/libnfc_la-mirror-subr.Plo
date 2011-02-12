@@ -1,0 +1,37 @@
+libnfc_la-mirror-subr.lo libnfc_la-mirror-subr.o: mirror-subr.c \
+  ../config.h /usr/include/stdio.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
+  /usr/include/machine/_types.h /usr/include/i386/_types.h \
+  /usr/include/secure/_stdio.h /usr/include/secure/_common.h \
+  mirror-subr.h /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h \
+  ../include/nfc/nfc-types.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h \
+  /usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h
+
+../config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/_types.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/i386/_types.h:
+
+/usr/include/secure/_stdio.h:
+
+/usr/include/secure/_common.h:
+
+mirror-subr.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h:
+
+../include/nfc/nfc-types.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h:
+
+/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdbool.h:

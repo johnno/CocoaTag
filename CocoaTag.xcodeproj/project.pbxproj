@@ -15,6 +15,8 @@
 		9E8A799B12988CF4002C2289 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8A799A12988CF4002C2289 /* CoreFoundation.framework */; };
 		9E8A79AC12988F94002C2289 /* MifareFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A79AB12988F94002C2289 /* MifareFormat.m */; };
 		9EC36329129C6C540039B8BB /* MifareURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC36328129C6C540039B8BB /* MifareURL.m */; };
+		9EE738C313072A27003EF62B /* PCSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE738C213072A27003EF62B /* PCSC.framework */; };
+		9EE738D113072A93003EF62B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9EE738D013072A93003EF62B /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		9EC36324129C6BC80039B8BB /* LibFreefare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibFreefare.h; sourceTree = "<group>"; };
 		9EC36327129C6C540039B8BB /* MifareURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MifareURL.h; sourceTree = "<group>"; };
 		9EC36328129C6C540039B8BB /* MifareURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MifareURL.m; sourceTree = "<group>"; };
+		9EE738C213072A27003EF62B /* PCSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PCSC.framework; path = System/Library/Frameworks/PCSC.framework; sourceTree = SDKROOT; };
+		9EE738D013072A93003EF62B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				9E8A799B12988CF4002C2289 /* CoreFoundation.framework in Frameworks */,
+				9EE738C313072A27003EF62B /* PCSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EE738C213072A27003EF62B /* PCSC.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
@@ -95,6 +101,7 @@
 		29B97314FDCFA39411CA2CEA /* CocoaTag */ = {
 			isa = PBXGroup;
 			children = (
+				9EE738D013072A93003EF62B /* README */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -184,6 +191,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				9EE738D113072A93003EF62B /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +274,8 @@
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
-					"-lfreefare",
-					"-lnfc",
+					./libs/libfreefare.a,
+					./libs/libnfc.a,
 					"-lcrypto",
 					"-lusb",
 				);
