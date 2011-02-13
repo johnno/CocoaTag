@@ -41,17 +41,11 @@ const uint8_t ndef_msg[15] = {
 
 - (IBAction) writeURL: (id) sender
 {
-	
 	NDEFMessage msg;
-	msg.appendRecord(NDEFRecord::createUriRecord(    QString(QLatin1String("http://code.google.com/p/libndef")) ));
+	msg.appendRecord(NDEFRecord::createUriRecord(    QString::fromUtf8( txtURL.stringValue.UTF8String)  ));
 	msg.appendRecord(NDEFRecord::createTextRecord( QString(QLatin1String("Hello, world!")), QString(QLatin1String("en-US")) ));
-	
-	// ...and then we can serialize it and send everywhere.
 	QByteArray output = msg.toByteArray();
-	
-
 	write_ndef( (const uint8_t*) output.data(),output.size());
-
 	[self LogString: @"Wrote message\n"];
 }
 

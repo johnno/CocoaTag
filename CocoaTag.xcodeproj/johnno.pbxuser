@@ -3,16 +3,16 @@
 	256AC3D80F4B6AC300CF3369 /* CocoaTagAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1316, 532}}";
-			sepNavSelRange = "{618, 0}";
-			sepNavVisRange = "{0, 656}";
+			sepNavSelRange = "{461, 0}";
+			sepNavVisRange = "{0, 659}";
 			sepNavWindowFrame = "{{15, 0}, {750, 1178}}";
 		};
 	};
 	256AC3D90F4B6AC300CF3369 /* CocoaTagAppDelegate.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1340, 1406}}";
-			sepNavSelRange = "{791, 0}";
-			sepNavVisRange = "{152, 193}";
+			sepNavIntBoundsRect = "{{0, 0}, {1028, 1254}}";
+			sepNavSelRange = "{1139, 0}";
+			sepNavVisRange = "{752, 727}";
 			sepNavWindowFrame = "{{15, 0}, {750, 878}}";
 		};
 	};
@@ -98,21 +98,21 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319245852;
-			PBXWorkspaceStateSaveDate = 319245852;
+			PBXPerProjectTemplateStateSaveDate = 319253698;
+			PBXWorkspaceStateSaveDate = 319253698;
 		};
 		perUserProjectItems = {
+			9E67D54413076EBE009F9FCF /* PBXTextBookmark */ = 9E67D54413076EBE009F9FCF /* PBXTextBookmark */;
+			9E67D54513076EBE009F9FCF /* PBXTextBookmark */ = 9E67D54513076EBE009F9FCF /* PBXTextBookmark */;
+			9E67D55313076F8E009F9FCF /* PBXTextBookmark */ = 9E67D55313076F8E009F9FCF /* PBXTextBookmark */;
+			9E67D55413076F8E009F9FCF /* PBXTextBookmark */ = 9E67D55413076F8E009F9FCF /* PBXTextBookmark */;
+			9E67D56113076FDE009F9FCF /* PBXTextBookmark */ = 9E67D56113076FDE009F9FCF /* PBXTextBookmark */;
 			9E8A79B31298902B002C2289 /* PBXTextBookmark */ = 9E8A79B31298902B002C2289 /* PBXTextBookmark */;
 			9E8A79B51298902B002C2289 /* PBXTextBookmark */ = 9E8A79B51298902B002C2289 /* PBXTextBookmark */;
 			9E8A79E512989270002C2289 /* PBXTextBookmark */ = 9E8A79E512989270002C2289 /* PBXTextBookmark */;
-			9E9CC857130754DF00DA6F79 /* PBXTextBookmark */ = 9E9CC857130754DF00DA6F79 /* PBXTextBookmark */;
 			9E9CC858130754DF00DA6F79 /* PBXTextBookmark */ = 9E9CC858130754DF00DA6F79 /* PBXTextBookmark */;
 			9E9CC859130754DF00DA6F79 /* PBXTextBookmark */ = 9E9CC859130754DF00DA6F79 /* PBXTextBookmark */;
 			9E9CC85A130754DF00DA6F79 /* PBXTextBookmark */ = 9E9CC85A130754DF00DA6F79 /* PBXTextBookmark */;
-			9E9CC8DE13075DD400DA6F79 /* PBXTextBookmark */ = 9E9CC8DE13075DD400DA6F79 /* PBXTextBookmark */;
-			9E9CC8F413075FA400DA6F79 /* PBXTextBookmark */ = 9E9CC8F413075FA400DA6F79 /* PBXTextBookmark */;
-			9E9CC8F91307607200DA6F79 /* PBXTextBookmark */ = 9E9CC8F91307607200DA6F79 /* PBXTextBookmark */;
-			9E9CC9071307620C00DA6F79 /* PBXTextBookmark */ = 9E9CC9071307620C00DA6F79 /* PBXTextBookmark */;
 			9EC3633E129C6D8D0039B8BB /* PBXTextBookmark */ = 9EC3633E129C6D8D0039B8BB /* PBXTextBookmark */;
 			9EC36340129C6D8D0039B8BB /* PBXTextBookmark */ = 9EC36340129C6D8D0039B8BB /* PBXTextBookmark */;
 			9EC3635E129C6FE50039B8BB /* PBXTextBookmark */ = 9EC3635E129C6FE50039B8BB /* PBXTextBookmark */;
@@ -138,6 +138,56 @@
 		executables = (
 			9E8A797A12988CA5002C2289 /* CocoaTag */,
 		);
+	};
+	9E67D54413076EBE009F9FCF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EE738D013072A93003EF62B /* README */;
+		name = "README: 11";
+		rLen = 0;
+		rLoc = 509;
+		rType = 0;
+		vrLen = 693;
+		vrLoc = 0;
+	};
+	9E67D54513076EBE009F9FCF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EC36324129C6BC80039B8BB /* LibFreefare.h */;
+		name = "LibFreefare.h: 3";
+		rLen = 0;
+		rLoc = 43;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 0;
+	};
+	9E67D55313076F8E009F9FCF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaTagAppDelegate.h */;
+		name = "CocoaTagAppDelegate.h: 15";
+		rLen = 0;
+		rLoc = 461;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 0;
+	};
+	9E67D55413076F8E009F9FCF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaTagAppDelegate.mm */;
+		name = "CocoaTagAppDelegate.mm: 47";
+		rLen = 11;
+		rLoc = 885;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 531;
+	};
+	9E67D56113076FDE009F9FCF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaTagAppDelegate.mm */;
+		name = "CocoaTagAppDelegate.mm: 49";
+		rLen = 0;
+		rLoc = 1139;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 752;
 	};
 	9E8A797A12988CA5002C2289 /* CocoaTag */ = {
 		isa = PBXExecutable;
@@ -251,16 +301,6 @@
 		path = /Users/johnno/workspace/NFC/libnfc/libnfc/nfc.c;
 		sourceTree = "<absolute>";
 	};
-	9E9CC857130754DF00DA6F79 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* CocoaTagAppDelegate.h */;
-		name = "CocoaTagAppDelegate.h: 23";
-		rLen = 0;
-		rLoc = 618;
-		rType = 0;
-		vrLen = 656;
-		vrLoc = 0;
-	};
 	9E9CC858130754DF00DA6F79 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 9EC36328129C6C540039B8BB /* MifareURL.m */;
@@ -291,51 +331,11 @@
 		vrLen = 632;
 		vrLoc = 422;
 	};
-	9E9CC8DE13075DD400DA6F79 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* CocoaTagAppDelegate.mm */;
-		name = "CocoaTagAppDelegate.mm: 53";
-		rLen = 0;
-		rLoc = 1178;
-		rType = 0;
-		vrLen = 722;
-		vrLoc = 531;
-	};
-	9E9CC8F413075FA400DA6F79 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 9EE738D013072A93003EF62B /* README */;
-		name = "README: 9";
-		rLen = 0;
-		rLoc = 480;
-		rType = 0;
-		vrLen = 840;
-		vrLoc = 0;
-	};
-	9E9CC8F91307607200DA6F79 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 9EC36324129C6BC80039B8BB /* LibFreefare.h */;
-		name = "LibFreefare.h: 3";
-		rLen = 0;
-		rLoc = 43;
-		rType = 0;
-		vrLen = 711;
-		vrLoc = 0;
-	};
-	9E9CC9071307620C00DA6F79 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 9EE738D013072A93003EF62B /* README */;
-		name = "README: 11";
-		rLen = 0;
-		rLoc = 509;
-		rType = 0;
-		vrLen = 693;
-		vrLoc = 0;
-	};
 	9EC36324129C6BC80039B8BB /* LibFreefare.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1024, 3629}}";
 			sepNavSelRange = "{43, 0}";
-			sepNavVisRange = "{0, 711}";
+			sepNavVisRange = "{0, 771}";
 		};
 	};
 	9EC36327129C6C540039B8BB /* MifareURL.h */ = {
@@ -459,7 +459,7 @@
 	};
 	9EE738D013072A93003EF62B /* README */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1024, 508}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1024, 502}}";
 			sepNavSelRange = "{509, 0}";
 			sepNavVisRange = "{0, 693}";
 			sepNavWindowFrame = "{{15, 141}, {1271, 737}}";

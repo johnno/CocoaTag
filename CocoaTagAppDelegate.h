@@ -12,7 +12,7 @@
 
 @interface CocoaTagAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
-	//IBOutlet NSTextField* txtLog;
+	IBOutlet NSTextField* txtURL;
 	IBOutlet NSTextView* txtLog;
 }
 
