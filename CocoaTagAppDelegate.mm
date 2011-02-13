@@ -7,9 +7,16 @@
 //
 
 #import "CocoaTagAppDelegate.h"
-#import "MifareFormat.h"
-#import "MifareURL.h"
 
+extern "C"
+{
+	#import "MifareFormat.h"
+	#import "MifareURL.h"
+}
+
+#include <ndefmessage.h>
+
+#include <QtCore/QLatin1String>
 
 @implementation CocoaTagAppDelegate
 
@@ -25,10 +32,27 @@
 	[self LogString: @"\n"];
 }
 
+#define RECORD_HEADER_1_RECORD 0xd1
+const uint8_t ndef_msg[15] = {
+    RECORD_HEADER_1_RECORD, 0x01, 0x0b, 0x55, 0x01, 'j', 'o', 'h',
+    'n', 'n', 'o', '.', 'c', 'o', 'm'
+};
+
+
 - (IBAction) writeURL: (id) sender
 {
-	write_url();
-	[self LogString: @"\n"];
+	
+	NDEFMessage msg;
+	msg.appendRecord(NDEFRecord::createUriRecord(    QString(QLatin1String("http://code.google.com/p/libndef")) ));
+	msg.appendRecord(NDEFRecord::createTextRecord( QString(QLatin1String("Hello, world!")), QString(QLatin1String("en-US")) ));
+	
+	// ...and then we can serialize it and send everywhere.
+	QByteArray output = msg.toByteArray();
+	
+
+	write_ndef( (const uint8_t*) output.data(),output.size());
+
+	[self LogString: @"Wrote message\n"];
 }
 
 

@@ -23,12 +23,6 @@ const MifareClassicKey default_keyb = {
 };
 
 
-#define RECORD_HEADER_1_RECORD 0xd1
-
-const uint8_t ndef_msg[15] = {
-    RECORD_HEADER_1_RECORD, 0x01, 0x0b, 0x55, 0x01, 'j', 'o', 'h',
-    'n', 'n', 'o', '.', 'c', 'o', 'm'
-};
 
 int
 search_sector_key (MifareTag tag, MifareClassicSectorNumber sector, MifareClassicKey *key, MifareClassicKeyType *key_type)
@@ -84,7 +78,7 @@ fix_mad_trailer_block (nfc_device_t *device, MifareTag tag, MifareClassicSectorN
     return 0;
 }
 
-void write_url()
+void write_ndef(const uint8_t* ndef_msg,size_t ndef_msg_size)
 {
     int error = 0;
     nfc_device_t *device = NULL;
@@ -188,7 +182,7 @@ void write_url()
 				}
 				
 				size_t encoded_size;
-				uint8_t *tlv_data = tlv_encode (3, ndef_msg, sizeof (ndef_msg), &encoded_size);
+				uint8_t *tlv_data = tlv_encode (3, ndef_msg, ndef_msg_size, &encoded_size);
 				
 				/*
 				 * At his point, we should have collected all information needed to

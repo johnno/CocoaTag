@@ -7,4 +7,4 @@
  *
  */
 
-void write_url();
+void write_ndef(const uint8_t* ndef_msg,size_t ndef_msg_size);

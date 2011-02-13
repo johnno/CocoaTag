@@ -1,14 +1,13 @@
 
 In addition to standard Cocoa dependancies, this application requires
- libusb-0.1.4 (not in this repo - install separately)
- libcrypto (comes as part of the os)
- libnfc (currently statically linked and in this repo)
- libfreefare (currently statically linked and in this repo)
+ libusb-0.1.4 (Install separately)
+ libcrypto (Comes as part of Mac OS)
+ libnfc (Static library included for now)
+ libfreefare (Static library included for now)
+ libndef (Source code directly in project for now)
+ QtCore.framework (Used by libndef, Get at http://qt.nokia.com/downloads/sdk-mac-os-cpp)
  PCSC.framework (Apple's build of http://pcsclite.alioth.debian.org/ccid.html which comes as part of the OS)
  
-I've left binaries of libnfc and libfreefare in the repo for now and the XCode project links statically to them via a relative path
-
 To build, simply install libusb onto your Mac and then open up the XCode project.
-
-Getting libusb is easiest using homebrew (https://github.com/mxcl/homebrew)
-> brew install libusb-compat
+I found that getting libusb is easiest using homebrew (https://github.com/mxcl/homebrew) as follows
+'brew install libusb-compat'
