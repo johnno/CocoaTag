@@ -300,6 +300,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
+					./deps/libfreefare/libfreefare,
 					"./deps/libnfc-1.4.1/include",
 					"./deps/libndef-1.1.0/include/ndef",
 					/usr/local/include,
